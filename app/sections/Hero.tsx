@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
             <div className="lg:hidden mb-6 flex justify-center">
               <div className="relative w-32 h-32 rounded-full overflow-hidden bg-gradient-to-br from-blue-500 to-cyan-500 p-1 shadow-xl">
                 <img 
-                  src="/anooshimg.jpeg" 
+                  src="/anooshImg.jpeg" 
                   alt="Anoosh Farhad"
                   className="w-full h-full object-contain bg-white border-4 border-white"
                   onError={(e) => {
@@ -92,7 +92,7 @@ export const Hero: React.FC = () => {
               <div className="relative mb-8 animate-scale-in">
                 <div className="w-64 h-64 rounded-full overflow-hidden bg-gradient-to-br from-blue-500 to-cyan-500 p-1 shadow-2xl shadow-blue-500/20">
                   <img 
-                    src="/anooshimg.jpeg" 
+                    src="/anooshImg.jpeg" 
                     alt="Anoosh Farhad"
                     className="w-full h-full object-contain bg-white border-4 border-white"
                     onError={(e) => {
