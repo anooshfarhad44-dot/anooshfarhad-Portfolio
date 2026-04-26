@@ -2,8 +2,8 @@ import { PortfolioData, SocialLink, NavItem } from '../types';
 
 export const meta: PortfolioData['meta'] = {
   title: "Anoosh Farhad | Full Stack Developer",
-  description: "Experienced Full Stack Developer with 3+ years specializing in Laravel, Next.js, React, Node.js, and modern web applications. Building scalable full-stack solutions.",
-  keywords: ["Laravel", "Next.js", "React", "Node.js", "MongoDB", "MySQL", "PHP", "Full Stack Developer", "Web Development"],
+  description: "Software Developer with 3+ years specialising in Laravel & PHP backend engineering alongside full-stack, mobile and API development.",
+  keywords: ["Laravel", "PHP", "React", "Next.js", "Node.js", ".NET Core", "React Native", "Full Stack Developer"],
   author: "Anoosh Farhad",
 };
 
@@ -12,138 +12,184 @@ export const navItems: NavItem[] = [
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const hero: PortfolioData['hero'] = {
   name: "Anoosh Farhad",
-  title: "Full Stack Developer",
-  description: "3+ years of experience building scalable web applications with Laravel, Next.js, React, and Node.js. Specialized in full-stack development, REST APIs, and modern database solutions.",
+  title: "Laravel & PHP · Full Stack · React · MERN · Next.js",
+  description: "Software Developer with 3+ years specialising in Laravel & PHP backend engineering alongside full-stack, mobile and API development. Expert in RBAC, Stripe payment flows, and real-time systems.",
   cta: {
-    primary: { label: "Hire Me", href: "#contact" },
+    primary: { label: "Contact Me", href: "#contact" },
     secondary: { label: "View Projects", href: "#projects" },
   },
 };
 
 export const skills: PortfolioData['skills'] = [
-  { name: "Laravel", level: 95, icon: "layers" },
-  { name: "PHP", level: 90, icon: "terminal" },
-  { name: "Next.js", level: 88, icon: "nextjs" },
-  { name: "React", level: 85, icon: "react" },
+  { name: "Laravel (PHP)", level: 95, icon: "layers" },
+  { name: "React / Next.js", level: 90, icon: "react" },
+  { name: ".NET Core", level: 85, icon: "terminal" },
   { name: "Node.js", level: 82, icon: "nodejs" },
-  { name: "MySQL", level: 88, icon: "database" },
+  { name: "React Native", level: 80, icon: "smartphone" },
+  { name: "MySQL / PostgreSQL", level: 88, icon: "database" },
   { name: "MongoDB", level: 80, icon: "mongodb" },
-  { name: "REST APIs", level: 92, icon: "server" },
-  { name: "Git & CI/CD", level: 85, icon: "gitBranch" },
+  { name: "Stripe / Socket.IO", level: 85, icon: "zap" },
+  { name: "Git & Docker", level: 85, icon: "gitBranch" },
 ];
 
 export const projects: PortfolioData['projects'] = [
   {
-    title: "Anoosh Fitness",
-    description: "High-conversion fitness brand website built around coaching offers, body calculators, client transformations, championship highlights, and certifications.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Responsive Design"],
-    icon: "globe",
-    link: "https://anooshfitness.vercel.app/",
-  },
-  {
-    title: "AAF Solutions",
-    description: "Modern digital agency website showcasing web, app, UI/UX, and marketing services with polished storytelling, testimonials, and strong lead-generation CTAs.",
-    tech: ["Next.js", "Tailwind CSS", "UI/UX", "Responsive Design"],
-    icon: "shield",
-    link: "https://aaf-sols.vercel.app/",
+    title: "PharmaPaws",
+    description: "Multi-vendor pharmacy marketplace with RBAC, Stripe integration, real-time pharmacist-customer chat, and Chart.js analytics.",
+    tech: ["Laravel 12", "MySQL", "Tailwind CSS", "Socket.IO", "Stripe"],
+    icon: "shoppingCart",
+    link: "https://github.com/anooshfarhad44-dot/PharmaPaws-laravel",
   },
   {
     title: "WorkZen Pro",
-    description: "Enterprise-grade multi-tenant workforce management SaaS with RBAC, attendance, payroll, recruitment, e-learning, analytics dashboards, and Stripe billing.",
-    tech: ["Next.js 16", "TypeScript", "Redux Toolkit", "Stripe"],
-    icon: "cpu",
+    description: "Enterprise SaaS workforce platform with multi-tenant RBAC, attendance, payroll, recruitment (ATS), and Stripe billing.",
+    tech: ["Laravel PHP", "Next.js 16", "TypeScript", "Tailwind CSS", "Stripe"],
+    icon: "briefcase",
     link: "https://workzenpro.com/",
   },
   {
+    title: "Now Saffer",
+    description: "Ride-hailing app (Uber replica) with driver/rider matching, real-time GPS tracking, surge pricing, and Stripe Connect.",
+    tech: ["Laravel PHP", "REST APIs", "GPS Tracking", "Stripe Connect"],
+    icon: "mapPin",
+  },
+  {
+    title: "Online Pharmacy UK",
+    description: "E-commerce platform with prescription management, NHS-compliant data handling, and GDPR-ready authentication.",
+    tech: ["Laravel PHP", "MySQL", "E-commerce", "GDPR"],
+    icon: "activity",
+    link: "https://onlinepharmacy-4u.co.uk/",
+  },
+  {
+    title: "Quick Crave",
+    description: "Full-stack food delivery platform with live order tracking, user/admin dashboards, and cart management.",
+    tech: ["MERN Stack", "Node.js", "Express", "MongoDB", "React"],
+    icon: "truck",
+    link: "https://quick-crave-frontend.onrender.com/",
+  },
+  {
     title: "Plannza",
-    description: "Full-stack project management SaaS featuring multi-tenant workspaces, JWT auth, RBAC, recurring billing, real-time collaboration, and background job processing.",
-    tech: ["Node.js", "Express", "MongoDB", "Socket.IO"],
+    description: "SaaS project management platform featuring real-time task collaboration, Stripe billing, and drag-and-drop interfaces.",
+    tech: ["Node.js", "Express", "MongoDB", "Next.js 15", "Socket.IO"],
     icon: "zap",
     link: "https://plannza.com/",
   },
   {
-    title: "Media Mace",
-    description: "Production-ready digital marketing agency SPA with package booking, add-on customization, real-time pricing, and smooth animated interactions.",
-    tech: ["React 19", "Vite", "Tailwind CSS 4", "EmailJS"],
-    icon: "trendingUp",
-    link: "https://mediamace.com/",
+    title: "Job Portal",
+    description: "Full-stack job portal with multi-step application tracking, employer/candidate dashboards, and admin approval system.",
+    tech: ["Laravel PHP", "MySQL", "Tailwind CSS", "RBAC"],
+    icon: "users",
   },
   {
-    title: "TSP Site",
-    description: "Responsive corporate website with dynamic routing, SEO improvements, mega-menu navigation, testimonial flows, and performance-focused frontend architecture.",
-    tech: ["React 19", "Vite 6", "Tailwind CSS 4", "REST APIs"],
-    icon: "briefcase",
-    link: "https://tech-solutionspro.com/",
+    title: "Monitoring Dashboard",
+    description: "Real-time institutional analytics platform with interactive maps, data visualization, and complex filtering.",
+    tech: ["Angular", ".NET Core", "SQL Server", "Chart.js"],
+    icon: "trendingUp",
   },
 ];
 
 export const experience: PortfolioData['experience'] = [
   {
-    role: "Backend Developer",
-    company: "Tech Solutions Inc.",
-    period: "2023 - Present",
+    role: "Laravel & MERN Developer",
+    company: "Tech Solution Pro",
+    period: "Dec 2025 - Present",
     highlights: [
-      "Built 15+ REST APIs serving 50K+ daily requests",
-      "Reduced database query time by 40% through optimization",
-      "Led migration from monolith to microservices architecture",
+      "Architected PharmaPaws, a multi-role RBAC marketplace with Laravel 12 & Socket.IO chat",
+      "Built WorkZen Pro, an enterprise SaaS with 10+ modules and Next.js 16 frontend",
+      "Developed Now Saffer ride-hailing app with real-time GPS tracking and Stripe Connect",
+      "Engineered Media Mace & TSP Site using React 19, Vite, and Tailwind CSS 4",
     ],
   },
   {
-    role: "Laravel Developer",
-    company: "Digital Agency",
-    period: "2022 - 2023",
+    role: "MERN | Angular | Laravel | .NET Developer",
+    company: "Innovcyte Technologies",
+    period: "Nov 2023 - Sep 2025",
     highlights: [
-      "Developed 8 custom CMS solutions for enterprise clients",
-      "Implemented CI/CD pipelines reducing deployment time by 60%",
-      "Mentored 2 junior developers on Laravel best practices",
+      "Built a full-featured Job Portal with multi-step application tracking and admin panel",
+      "Developed a Registration Portal with OTP verification and document submission workflows",
+      "Created a Full-Stack Monitoring App with real-time analytics and data visualization in Angular & .NET",
+      "Implemented Skilling Pakistan data scraping and reporting pipelines",
+    ],
+  },
+  {
+    role: "React Native Developer",
+    company: "Develo IT Solutions",
+    period: "Jul 2023 - Nov 2023",
+    highlights: [
+      "Developed cross-platform mobile apps using Redux, Firebase, and Firestore",
+      "Integrated real-time order tracking and push notifications",
+      "Utilized Cloudinary for multimedia and React Native Maps for location services",
     ],
   },
 ];
 
 export const socials: SocialLink[] = [
   { name: "GitHub", url: "https://github.com/anooshfarhad44-dot", icon: "github" },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/anoosh-farhad-4b3088389/", icon: "linkedin" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/anoosh-farhad-4b3088389", icon: "linkedin" },
 ];
 
 export const contact: PortfolioData['contact'] = {
-  title: "Let's Work Together",
-  description: "Looking for a Full Stack developer for your next project? I'm available for freelance work and full-time opportunities.",
+  title: "Get In Touch",
+  description: "I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
   email: "anooshfarhad4.4@gmail.com",
+  phone: "+92 348 5153978",
+  location: "Islamabad, Pakistan",
   socials,
 };
 
+export const education: PortfolioData['education'] = [
+  {
+    degree: "B.Sc. Software Engineering",
+    institution: "COMSATS University, Islamabad",
+    period: "Sep 2019 - Jun 2023",
+    details: "FYP: Outpost Steer (React Native, Node.js, Flask, FastAPI)",
+  },
+];
+
+export const achievements: PortfolioData['achievements'] = [
+  {
+    title: "Gold Medalist",
+    description: "Regional Weightlifting Championship, COMSATS",
+  },
+  {
+    title: "JavaScript Certification",
+    description: "Frontend Development",
+  },
+];
+
 export const footer: PortfolioData['footer'] = {
-  copyright: "2024 Anoosh Farhad. Built with Full Stack expertise.",
-  tagline: "Full Stack Developer",
+  copyright: `2026 Anoosh Farhad. Built with passion.`,
+  tagline: "Laravel & PHP · Full Stack · React · MERN · Next.js",
 };
 
 export const stats = [
   { value: "3+", label: "Years Experience" },
-  { value: "100+", label: "REST APIs Integrated" },
-  { value: "10+", label: "Projects Delivered" },
-  { value: "50+", label: "Reusable Pages & Modules" },
+  { value: "20+", label: "SaaS & UK Projects" },
+  { value: "100+", label: "API Endpoints Built" },
+  { value: "10+", label: "Modules in WorkZen Pro" },
 ];
 
 export const techStack = [
-  "Laravel",
-  "PHP",
-  "Next.js",
-  "React",
+  "Laravel (PHP)",
+  "React / Next.js",
   "Node.js",
+  ".NET Core",
+  "React Native",
   "MySQL",
-  "MongoDB",
   "PostgreSQL",
-  "Redis",
-  "REST APIs",
+  "MongoDB",
+  "TypeScript",
+  "Python",
+  "Stripe",
+  "Socket.IO",
   "Docker",
-  "AWS",
   "Git",
-  "CI/CD",
 ];
 
 export const portfolioData: PortfolioData = {
@@ -152,6 +198,8 @@ export const portfolioData: PortfolioData = {
   skills,
   projects,
   experience,
+  education,
+  achievements,
   contact,
   footer,
 };

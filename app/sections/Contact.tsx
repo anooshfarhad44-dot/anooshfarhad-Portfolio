@@ -31,7 +31,7 @@ export const Contact: React.FC = () => {
               Let&apos;s discuss how I can help bring your ideas to life.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button
                 href={`mailto:${contact.email}`}
                 variant="primary"
@@ -40,6 +40,16 @@ export const Contact: React.FC = () => {
               >
                 Send Email
               </Button>
+              {contact.phone && (
+                <Button
+                  href={`tel:${contact.phone}`}
+                  variant="outline"
+                  size="lg"
+                  icon="phone"
+                >
+                  {contact.phone}
+                </Button>
+              )}
               <Button
                 href={socials[1]?.url || "#"}
                 variant="secondary"
@@ -50,6 +60,13 @@ export const Contact: React.FC = () => {
                 LinkedIn
               </Button>
             </div>
+            
+            {contact.location && (
+              <p className="text-slate-500 text-sm flex items-center justify-center gap-2">
+                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+                Based in {contact.location}
+              </p>
+            )}
           </Card>
         </div>
         

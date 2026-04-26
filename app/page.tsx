@@ -1,4 +1,4 @@
-import { Hero, Skills, Experience, Projects, Contact, Footer } from './sections';
+import { Hero, Skills, Experience, Projects, Education, Contact, Footer } from './sections';
 import { Navbar, ScrollToTop, AnimatedBackground } from './components';
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Projects />
+        <Education />
         <Contact />
       </main>
       <Footer />

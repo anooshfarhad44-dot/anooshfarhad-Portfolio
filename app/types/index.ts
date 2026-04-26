@@ -203,12 +203,35 @@ export interface MetaData {
   author: string;
 }
 
+export interface ContactProps {
+  title: string;
+  description: string;
+  email: string;
+  phone?: string;
+  location?: string;
+  socials: SocialLink[];
+}
+
+export interface Education {
+  degree: string;
+  institution: string;
+  period: string;
+  details?: string;
+}
+
+export interface Achievement {
+  title: string;
+  description: string;
+}
+
 export interface PortfolioData {
   meta: MetaData;
   hero: HeroProps;
   skills: Skill[];
   projects: Project[];
   experience: Experience[];
+  education?: Education[];
+  achievements?: Achievement[];
   contact: ContactProps;
   footer: FooterProps;
 }
